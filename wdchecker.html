@@ -1,0 +1,61 @@
+<html>
+  <!--
+    wdchecker.html
+    Chris Moore - ITEC 225
+    assignment #3
+    add description
+  -->
+
+  <head>
+    <title>Word Checker</title>
+
+    
+    <style stype ="text/css">
+      span.bold {font-weight: bold;}
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Word Checker Program</h1>
+
+    <script type ="text/javascript">
+    //comment
+
+      // add comment for script   
+      var today = new Date();
+      var hr = today.getHours();
+    
+      // add comment
+      spbef = "<span class = 'bold'>";
+      spaft = "</span>";
+    
+      document.write ("<p>The current hour is: " + spbef + hr + spaft + "</p>");
+
+      wd = window.prompt("Enter a word, all aphabetic characters", "Enter Here");    
+      
+      document.write("<p>Word entered is: " + spbef + wd + spaft + "</p>");
+
+      pos = wd.search(/[aeiou]/i);  
+      document.write("<p>the position of the first vowel is: " + spbef + pos + spaft + "</p>"); 
+
+      len = wd.length;
+      document.write("<p>the length is: " + len + "</p>");
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
